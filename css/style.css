@@ -1,0 +1,255 @@
+.bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+
+}
+
+
+.castle{
+    width: 30vw;
+    height: 80vh;
+    background-image: url(../img/castle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 20vh;
+    left: 0;
+}
+
+.castle_2{
+    background-image: url(../img/castle_2.png);
+}
+
+.castle_3{
+    background-image: url(../img/castle_3.png);
+}
+
+.ston{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 0;
+    left: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.ston_1{
+    background-image: url(../img/ston_1.png);
+    animation: move 4s ;
+    position: absolute;
+}
+@keyframes move{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-100vw,70vh) rotateZ(720deg);
+    }
+}
+
+.ston_2{
+    background-image: url(../img/ston_2.png);
+    animation:  move_2 4s 2s ;
+    position: absolute;
+}
+@keyframes move_2{
+    0%{
+        transform: translate(0,50vh);
+    }
+    100%{
+        transform: translate(-100vw,90vh) rotateZ(360deg);
+    }
+}
+
+.ston_3{
+    background-image: url(../img/ston_3.png);
+    animation:  move_3 4s 3s linear alternate;
+    position: absolute;
+}
+
+@keyframes move_3{
+    0%{
+        transform: translate(0,100vh);
+    }
+    40%{
+        transform: translate(-35vw,55vh) rotateZ(800deg);
+    }
+    50%{
+        transform: translate(-45vw,53vh) rotateZ(1000deg);
+    }
+    60%{
+        transform: translate(-50vw,50vh) rotateZ(1200deg);
+    }
+    65%{
+        transform: translate(-55vw,53vh) rotateZ(1300deg);
+    }
+    75%{
+        transform: translate(-65vw,55vh) rotateZ(1500deg);
+    }
+    100%{
+        transform: translate(-100vw,80vh) rotateZ(2000deg);
+    }
+}
+
+.ston_4{
+    background-image: url(../img/ston_1.png);
+    animation:  move_4 4s 6s ;
+    position: absolute;
+}
+@keyframes move_4{
+    0%{
+        transform: translate(-20vw,-20vh);
+    }
+    100%{
+        transform: translate(-80vw,100vh) rotateZ(720deg);
+    }
+}
+
+
+.ston_5{
+    background-image: url(../img/ston_3.png);
+    animation:  move_5 3.5s 8s ;
+    position: absolute;
+}
+@keyframes move_5{
+    0%{
+        transform: translate(0,-20vh);
+    }
+    100%{
+        transform: translate(-100vw,100vh) rotateZ(720deg);
+    }
+}
+
+.ston_6{
+    background-image: url(../img/ston_2.png);
+    animation:  move_6 2s 11s linear alternate;
+    position: absolute;
+}
+
+@keyframes move_6{
+    0%{
+        transform: translate(0,80vh);
+    }
+    40%{
+        transform: translate(-35vw,35vh) rotateZ(800deg);
+    }
+    50%{
+        transform: translate(-45vw,33vh) rotateZ(1000deg);
+    }
+    60%{
+        transform: translate(-50vw,30vh) rotateZ(1200deg);
+    }
+    65%{
+        transform: translate(-55vw,33vh) rotateZ(1300deg);
+    }
+    75%{
+        transform: translate(-65vw,35vh) rotateZ(1500deg);
+    }
+    100%{
+        transform: translate(-100vw,83vh) rotateZ(2000deg);
+    }
+}
+
+
+h6{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-image: url(../img/boom.png);
+    top: 0;
+    left: 0;
+    animation-name: boom;
+    animation-duration: 3s;
+    animation-direction: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes boom{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: scale(0) ;
+        
+    }
+}
+
+.break{
+    display: none;
+}
+
+
+.end{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.end h1{
+    font-size: 300px;
+    margin-bottom: 100px;
+    color: red;
+}
+
+.end button{
+    font-size: 100px;
+    color: red;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.game_set{
+    display: flex;
+}
+
+.clear{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.clear h1{
+    font-size: 200px;
+    margin-bottom: 100px;
+    color: red;
+    text-align: center;
+}
+
+.clear button{
+    font-size: 100px;
+    color: red;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.game_clear{
+    display: flex;
+}
+
